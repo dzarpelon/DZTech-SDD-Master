@@ -23,13 +23,13 @@ Describe the intended outcome of the specification.
 
 ## Workflow States
 
-- `current_state`:
-- `target_state`:
-- `required_transitions`:
+- `current_state`: use a state from `framework/workflow-state-model.md`
+- `target_state`: use a state from `framework/workflow-state-model.md`
+- `required_transitions`: list only valid transitions from the workflow model
 
 ## Validation Gates
 
-- `human_approvals_required`:
+- `human_approvals_required`: list the required gates from `framework/validation-gates.md`
 - `validation_criteria`:
 
 ## Outcome

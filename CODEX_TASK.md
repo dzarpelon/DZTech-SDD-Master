@@ -30,7 +30,7 @@ Available tasks:
 - `reconcile-repo.md`
 - `validate-repo.md`
 
-For an existing repository, the default task is `reconcile-repo.md`.
+For an existing repository, the default task is `tasks/reconcile-repo.md`.
 
 ---
 
@@ -49,7 +49,7 @@ You MUST read and follow:
 
 - Use `/tasks/bootstrap-repo.md` only for initial repository creation
 - Use `/tasks/create-project-from-spec.md` to generate a project record from a validated spec
-- Use `/tasks/reconcile-repo.md` to update an existing repository so it matches the source-of-truth files
+- Use `/tasks/reconcile-repo.md` as the default task for updating an existing repository so it matches the source-of-truth files
 - Use `/tasks/validate-repo.md` for audit-only validation with no file changes
 
 If repository state already exists, do not recreate it. Execute the selected task from `/tasks/` instead.

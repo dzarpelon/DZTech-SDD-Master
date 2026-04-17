@@ -31,7 +31,7 @@ You MUST:
 5. Prefer moving or refactoring valid files instead of recreating them
 6. Replace weak placeholders with minimal functional implementations only where required
 7. Implement only the missing or incomplete required components
-8. Validate the final repository state
+8. Validate the final repository state against the governing files
 
 ---
 
@@ -49,7 +49,7 @@ You MUST:
 - Preserve valid existing work unless it conflicts with the source-of-truth files
 - Prefer moving or refactoring valid files instead of recreating them
 - Keep the reconciliation behavior deterministic and explicit
-- Summarize exact gaps, applied changes, and remaining human review points
+- Summarize exact gaps, applied changes, and remaining human review points using the required final summary sections
 
 ---
 
@@ -81,9 +81,9 @@ Repository state is valid when:
 
 The final reconciliation summary must include:
 
-- `Gaps`: exact missing, incomplete, or inconsistent items found
+- `Gaps Found`: exact missing, incomplete, or inconsistent items found
 - `Changes Applied`: exact repository changes made
-- `Remaining Human Review`: decisions, risks, or confirmations still requiring human review
+- `Remaining Human Review Points`: decisions, risks, or confirmations still requiring human review
 
 ---
 
