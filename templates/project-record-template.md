@@ -2,6 +2,7 @@
 
 Use one record per generated or managed project.
 
+- `project_id`:
 - `project_name`:
 - `repo_url`:
 - `framework_version`: use `framework/manifest.md`
@@ -9,4 +10,6 @@ Use one record per generated or managed project.
 - `source_idea`:
 - `source_spec`:
 - `created_at`: use ISO date format
-- `status`: use the active state from `framework/workflow-state-model.md`
+- `last_updated_at`: use ISO date format
+- `current_workflow_state`: use a state from `framework/workflow-state-model.md`
+- `status`:

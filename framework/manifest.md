@@ -1,7 +1,12 @@
 # Framework Manifest
 
+## Identity
+
 - `framework_name`: `DZTech SDD Master`
 - `framework_version`: `v1.0.0`
+
+## Versioning
+
 - `versioning_policy`: `semver`
 - `upgrade_policy`: `explicit`
 

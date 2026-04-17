@@ -39,7 +39,8 @@ You MUST:
 3. Read `framework/manifest.md` and use its `framework_version`
 4. Generate one project record using `templates/project-record-template.md`
 5. Write the result to `project-registry/projects/<source-spec-stem>.project-record.md`
-6. Set `status` to `project_created`
+6. Set `current_workflow_state` to `project_created`
+7. Set `status` to `project_created`
 
 ---
 
@@ -47,9 +48,11 @@ You MUST:
 
 - Use the source spec path exactly in `source_spec`
 - Use `framework/manifest.md` as the only version source
+- Use the source spec basename without the file extension as `project_id`
 - Use the spec `Name:` value as `project_name` when present
 - If no `Name:` value exists, use the source spec basename without the file extension as `project_name`
 - Use the execution date in ISO format for `created_at`
+- Use the same execution date in ISO format for `last_updated_at`
 - Do not invent `repo_url`, `variant`, or `source_idea` values when they are not present in the source-of-truth files
 
 ---
@@ -72,9 +75,12 @@ This task is complete when:
 
 - One project record exists in `project-registry/projects/`
 - The record contains:
+  - `project_id`
   - `project_name`
   - `framework_version`
   - `source_spec`
   - `created_at`
+  - `last_updated_at`
+  - `current_workflow_state`
   - `status`
 - The record is derived from repository files only

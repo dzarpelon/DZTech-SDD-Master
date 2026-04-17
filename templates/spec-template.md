@@ -21,7 +21,15 @@ Describe the intended outcome of the specification.
 
 - principle:
 
-## Workflow States
+## Inputs
+
+- input:
+
+## Constraints
+
+- constraint:
+
+## Workflow States / Transitions
 
 - `current_state`: use a state from `framework/workflow-state-model.md`
 - `target_state`: use a state from `framework/workflow-state-model.md`
@@ -32,6 +40,6 @@ Describe the intended outcome of the specification.
 - `human_approvals_required`: list the required gates from `framework/validation-gates.md`
 - `validation_criteria`:
 
-## Outcome
+## Acceptance Criteria
 
-Describe the expected result after validation and execution.
+- criterion:

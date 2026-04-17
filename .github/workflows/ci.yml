@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Repository structure validation
+      - name: Repository validation
         run: |
           set -eu
           test -f README.md
@@ -45,6 +45,12 @@ jobs:
           test -f framework/traceability.md
           test -f framework/version.md
           test -f tasks/bootstrap-repo.md
+          test -f tasks/create-project-from-spec.md
           test -f tasks/reconcile-repo.md
           test -f tasks/validate-repo.md
+          grep -q '^The canonical version source is `framework/manifest.md`\\.$' framework/version.md
+          grep -q '^Do not duplicate version values in this file\\.$' framework/version.md
+          grep -q '^## Task System$' CODEX_TASK.md
+          grep -q '^## Final Step$' CODEX_TASK.md
+          ! grep -q '^## Execution Model$' CODEX_TASK.md
           echo "Repository structure validation passed"

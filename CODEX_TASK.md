@@ -10,12 +10,13 @@ This repository MUST be executable and evolvable from its files, with repository
 
 ## Source Of Truth Order
 
-1. `master-spec/dztech-sdd-master-operational-workflow-spec-v1.md`
-2. `master-spec/dztech-sdd-master-spec-v1.md`
-3. repository state
-4. AI reasoning
-
-The selected task file in `/tasks/` operates within this source-of-truth order and does not override it.
+1. `CODEX_TASK.md`
+2. `AGENTS.md`
+3. `master-spec/dztech-sdd-master-operational-workflow-spec-v1.md`
+4. `master-spec/dztech-sdd-master-spec-v1.md`
+5. selected task file in `/tasks/`
+6. current repository state
+7. AI reasoning
 
 ---
 
@@ -38,9 +39,10 @@ For an existing repository, the default task is `tasks/reconcile-repo.md`.
 
 You MUST read and follow:
 
-- `master-spec/dztech-sdd-master-spec-v1.md`
-- `master-spec/dztech-sdd-master-operational-workflow-spec-v1.md`
+- `CODEX_TASK.md`
 - `AGENTS.md`
+- `master-spec/dztech-sdd-master-operational-workflow-spec-v1.md`
+- `master-spec/dztech-sdd-master-spec-v1.md`
 - the selected task file in `/tasks/`
 
 ---

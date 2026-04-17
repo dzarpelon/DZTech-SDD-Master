@@ -12,7 +12,7 @@ This file is operationally used by reconciliation and validation work to map wor
 - reusable scaffolds and repository blueprints -> `templates/`
 - framework governance and method references -> `framework/`
 
-## Source of Truth Priority
+## Source Of Truth Context
 
 1. Operational Workflow Spec
 2. Core Spec
