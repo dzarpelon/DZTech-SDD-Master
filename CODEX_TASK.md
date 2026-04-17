@@ -28,6 +28,7 @@ Available tasks:
 
 - `bootstrap-repo.md`
 - `create-project-from-spec.md`
+- `materialize-project-repo.md`
 - `reconcile-repo.md`
 - `validate-repo.md`
 
@@ -51,6 +52,7 @@ You MUST read and follow:
 
 - Use `/tasks/bootstrap-repo.md` only for initial repository creation
 - Use `/tasks/create-project-from-spec.md` to generate a project record from a validated spec
+- Use `/tasks/materialize-project-repo.md` to create a minimal in-repo project scaffold from a validated spec and project record
 - Use `/tasks/reconcile-repo.md` as the default task for updating an existing repository so it matches the source-of-truth files
 - Use `/tasks/validate-repo.md` for audit-only validation with no file changes
 

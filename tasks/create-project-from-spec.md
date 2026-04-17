@@ -8,7 +8,7 @@ This task implements the minimal project creation flow:
 
 - `validated_spec` -> `project_created`
 
-It does not create a repository or perform downstream execution.
+It is the registry step only. It does not materialize a project scaffold, create a repository, or perform downstream execution.
 
 ---
 
