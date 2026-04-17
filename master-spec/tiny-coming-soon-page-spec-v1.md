@@ -2,9 +2,9 @@
 
 ## Identity
 
-Name: Tiny Coming Soon Page
-Type: Test Project Specification
-Version: v1.0.0
+- Name: Tiny Coming Soon Page
+- Type: Test Project Specification
+- Version: v1.0.0
 
 ## Objective
 

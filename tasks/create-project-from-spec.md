@@ -38,7 +38,7 @@ You MUST:
 2. Use `templates/spec-template.md` as the canonical field model for extracting spec information
 3. Read `framework/manifest.md` and use its `framework_version`
 4. Generate one project record using `templates/project-record-template.md`
-5. Write the result to `project-registry/projects/<source-spec-stem>.project-record.md`
+5. Write the result to `project-registry/projects/<project_id>.project-record.md`
 6. Set `current_workflow_state` to `project_created`
 7. Set `status` to `project_created`
 
@@ -73,7 +73,7 @@ You MUST NOT:
 
 This task is complete when:
 
-- One project record exists in `project-registry/projects/`
+- One project record exists at `project-registry/projects/<project_id>.project-record.md`
 - The record contains:
   - `project_id`
   - `project_name`
