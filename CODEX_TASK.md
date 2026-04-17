@@ -26,6 +26,7 @@ Repository operational tasks are defined as files in `/tasks/`.
 Available tasks:
 
 - `bootstrap-repo.md`
+- `create-project-from-spec.md`
 - `reconcile-repo.md`
 - `validate-repo.md`
 
@@ -47,6 +48,7 @@ You MUST read and follow:
 ## Task Selection Rules
 
 - Use `/tasks/bootstrap-repo.md` only for initial repository creation
+- Use `/tasks/create-project-from-spec.md` to generate a project record from a validated spec
 - Use `/tasks/reconcile-repo.md` to update an existing repository so it matches the source-of-truth files
 - Use `/tasks/validate-repo.md` for audit-only validation with no file changes
 
