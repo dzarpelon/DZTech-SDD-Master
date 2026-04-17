@@ -25,6 +25,7 @@ You MUST read and follow:
 - `framework/workflow-state-model.md`
 - `templates/spec-template.md`
 - `templates/project-record-template.md`
+- `templates/project-scaffold-template.md`
 - `project-registry/project-record-template.md`
 - `AGENTS.md`
 
@@ -52,10 +53,11 @@ You MUST:
 1. Read the validated spec file
 2. Read the matching project record
 3. Read `framework/manifest.md` and use its `framework_version`
-4. Create the scaffold directory at `project-registry/projects/<project_id>/`
-5. Create `README.md`
-6. Create `project-spec.md` as a copied or derived project spec from the validated specification
-7. Create `project-metadata.md`
+4. Read `templates/project-scaffold-template.md` and use it as the source of scaffold structure and expectations
+5. Create the scaffold directory at `project-registry/projects/<project_id>/`
+6. Create `README.md`
+7. Create `project-spec.md` as a copied or derived project spec from the validated specification
+8. Create `project-metadata.md`
 
 ---
 
@@ -64,6 +66,7 @@ You MUST:
 - Use the validated spec as the source for scaffold content
 - Use the existing project record as the source for `project_id`, `project_name`, and registry alignment
 - Use `framework/manifest.md` as the only version source
+- Use `templates/project-scaffold-template.md` as the source for the scaffold file set and file expectations
 - The scaffold README must identify the source spec and the matching project record
 - The metadata file must include:
   - `project_id`
