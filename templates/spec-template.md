@@ -12,22 +12,26 @@ Describe the intended outcome of the specification.
 
 ## Actors
 
-- Human Operator
-- AI Agent
-- Orchestrator
-- GitHub
+- Human Operator:
+- AI Agent:
+- Orchestrator:
+- GitHub:
 
 ## Principles
 
 - principle:
 
-## Workflow
+## Workflow States
 
-- current_state:
-- target_state:
-- required_transitions:
+- `current_state`:
+- `target_state`:
+- `required_transitions`:
 
-## Validation
+## Validation Gates
 
-- approval_required:
-- validation_criteria:
+- `human_approvals_required`:
+- `validation_criteria`:
+
+## Outcome
+
+Describe the expected result after validation and execution.

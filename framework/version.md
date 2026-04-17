@@ -1,5 +1,12 @@
 # Framework Version
 
-- Current version: `v1.0.0`
-- Scope: single-unit framework versioning
-- Canonical source: `framework/manifest.md`
+The canonical version source is `framework/manifest.md`.
+
+Do not duplicate version values in this file.
+
+Use the manifest for:
+
+- `framework_name`
+- `framework_version`
+- `versioning_policy`
+- `upgrade_policy`

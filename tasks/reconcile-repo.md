@@ -4,7 +4,7 @@
 
 Update an existing repository so it matches the source-of-truth files.
 
-This is the default task for an existing repository.
+This is the default task for an existing repository and the main repository reconciliation task.
 
 ---
 
@@ -26,9 +26,12 @@ You MUST:
 
 1. Analyze the current repository files and structure
 2. Compare the repository state against the governing specifications
-3. Identify what is missing, incomplete, or inconsistent
-4. Implement only the missing or incomplete required components
-5. Validate the final repository state
+3. Produce an exact gap list before applying edits
+4. Preserve valid existing work unless it conflicts with the source-of-truth files
+5. Prefer moving or refactoring valid files instead of recreating them
+6. Replace weak placeholders with minimal functional implementations only where required
+7. Implement only the missing or incomplete required components
+8. Validate the final repository state
 
 ---
 
@@ -43,6 +46,10 @@ You MUST:
 - Keep traceability represented in repository files
 - Ensure GitHub Actions CI exists and is functional
 - Replace placeholders with minimal functional implementations when required
+- Preserve valid existing work unless it conflicts with the source-of-truth files
+- Prefer moving or refactoring valid files instead of recreating them
+- Keep the reconciliation behavior deterministic and explicit
+- Summarize exact gaps, applied changes, and remaining human review points
 
 ---
 
@@ -55,6 +62,7 @@ You MUST NOT:
 - Duplicate repository structures
 - Over-engineer the implementation
 - Add features not defined by the specifications
+- Invent new architecture beyond the source-of-truth files
 - Rely on prompts as the source of truth
 
 ---
@@ -68,6 +76,14 @@ Repository state is valid when:
 - Workflow representation exists in repository files
 - GitHub Actions CI is present and valid
 - The repository is ready for human validation
+
+## Required Final Summary
+
+The final reconciliation summary must include:
+
+- `Gaps`: exact missing, incomplete, or inconsistent items found
+- `Changes Applied`: exact repository changes made
+- `Remaining Human Review`: decisions, risks, or confirmations still requiring human review
 
 ---
 

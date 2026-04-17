@@ -9,4 +9,4 @@ Use this template when registering a project created from a validated specificat
 - `source_idea`:
 - `source_spec`:
 - `created_at`:
-- `status`:
+- `status`: use the active workflow state

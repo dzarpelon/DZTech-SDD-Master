@@ -8,6 +8,17 @@ This repository MUST be executable and evolvable from its files, with repository
 
 ---
 
+## Source Of Truth Order
+
+1. `master-spec/dztech-sdd-master-operational-workflow-spec-v1.md`
+2. `master-spec/dztech-sdd-master-spec-v1.md`
+3. repository state
+4. AI reasoning
+
+The selected task file in `/tasks/` operates within this source-of-truth order and does not override it.
+
+---
+
 ## Task System
 
 Repository operational tasks are defined as files in `/tasks/`.
