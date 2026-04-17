@@ -1,4 +1,4 @@
-# Ideas
+# Ideation
 
 This directory stores idea-stage artifacts for the Spec-Driven Development flow.
 

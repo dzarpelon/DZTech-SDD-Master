@@ -2,115 +2,55 @@
 
 ## Objective
 
-Create a FULLY FUNCTIONAL foundation for the repository "DZTech SDD Master"
-both locally and on GitHub.
+Create and maintain a reproducible, file-driven foundation for the repository "DZTech SDD Master", both locally and on GitHub.
+
+This repository MUST be executable and evolvable from its files, with repository files serving as the source of truth.
+
+---
+
+## Task System
+
+Repository operational tasks are defined as files in `/tasks/`.
+
+Available tasks:
+
+- `bootstrap-repo.md`
+- `reconcile-repo.md`
+- `validate-repo.md`
+
+For an existing repository, the default task is `reconcile-repo.md`.
 
 ---
 
 ## Inputs
 
-You MUST read:
+You MUST read and follow:
 
-- dztech-sdd-master-spec-v1.md
-- dztech-sdd-master-operational-workflow-spec-v1.md
-- AGENTS.md
-
----
-
-## Requirements
-
-You MUST:
-
-### Repository Setup
-1. Create local folder: DZTech-SDD-Master
-2. Initialize git repository
-3. Create GitHub repository: "DZTech SDD Master"
-4. Connect local repo to remote
-5. Push initial commit
+- `master-spec/dztech-sdd-master-spec-v1.md`
+- `master-spec/dztech-sdd-master-operational-workflow-spec-v1.md`
+- `AGENTS.md`
+- the selected task file in `/tasks/`
 
 ---
 
-### Repository Structure
+## Task Selection Rules
 
-Create structure:
+- Use `/tasks/bootstrap-repo.md` only for initial repository creation
+- Use `/tasks/reconcile-repo.md` to update an existing repository so it matches the source-of-truth files
+- Use `/tasks/validate-repo.md` for audit-only validation with no file changes
 
-- /ideas
-- /specs
-- /projects
-- /framework
-- /.github/workflows
-
----
-
-### Required Files
-
-Create:
-
-- README.md (describe purpose of repo)
-- AGENTS.md (already provided)
-- Spec files (already provided)
-
----
-
-### GitHub Actions (MANDATORY)
-
-Create a working CI pipeline:
-
-File:
-.github/workflows/ci.yml
-
-Must include:
-
-- Trigger on push and PR
-- Basic job with:
-  - checkout repo
-  - echo validation step
-
-Example behavior:
-- Job name: "Validate Repository"
-- Step: "Repository structure validation placeholder"
-
-This MUST be a valid GitHub Actions file (not placeholder text).
-
----
-
-### Validation
-
-Ensure:
-
-- Repo builds in GitHub Actions
-- Workflow executes successfully
-- Structure matches specs
+If repository state already exists, do not recreate it. Execute the selected task from `/tasks/` instead.
 
 ---
 
 ## Constraints
 
-You MUST NOT:
-
-- Skip CI setup
-- Leave workflows as empty placeholders
-- Create advanced automation beyond CI
-- Add features not defined
-
----
-
-## Success Criteria
-
-Repository is valid when:
-
-- Exists locally and on GitHub
-- Has structure + real files (not only .gitkeep)
-- Has working GitHub Actions pipeline
-- CI runs successfully
+- Do not use prompts as system logic
+- Do not duplicate full task bodies in this controller file
+- Keep repository behavior reproducible from repository files
 
 ---
 
 ## Final Step
 
-STOP execution after:
-
-- Repo is pushed
-- CI is configured and valid
-
-Wait for Human Operator validation.
+Execute the selected task file and stop when that task's defined completion point is reached.

@@ -4,9 +4,10 @@ This repository maintains traceability between workflow stages, actors, and repo
 
 ## Flow Mapping
 
-- `idea`, `approved_idea` -> `ideas/`
-- `spec_draft`, `validated_spec` -> `specs/`
-- `project_created`, `backlog_generated`, `in_execution`, `pr_review`, `product_validation`, `released` -> `projects/`
+- `idea`, `approved_idea` -> `ideation/`
+- `spec_draft`, `validated_spec` -> `master-spec/`
+- `project_created`, `backlog_generated`, `in_execution`, `pr_review`, `product_validation`, `released` -> `project-registry/`
+- reusable scaffolds and repository blueprints -> `templates/`
 - framework governance and method references -> `framework/`
 
 ## Source of Truth Priority

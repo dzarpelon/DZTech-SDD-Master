@@ -18,18 +18,24 @@ jobs:
           test -f README.md
           test -f AGENTS.md
           test -f CODEX_TASK.md
-          test -f dztech-sdd-master-spec-v1.md
-          test -f dztech-sdd-master-operational-workflow-spec-v1.md
-          test -d ideas
-          test -d specs
-          test -d projects
+          test -f master-spec/dztech-sdd-master-spec-v1.md
+          test -f master-spec/dztech-sdd-master-operational-workflow-spec-v1.md
+          test -d ideation
+          test -d master-spec
+          test -d project-registry
+          test -d templates
           test -d framework
+          test -d tasks
           test -d .github/workflows
-          test -f ideas/README.md
-          test -f specs/README.md
-          test -f projects/README.md
+          test -f ideation/README.md
+          test -f master-spec/README.md
+          test -f project-registry/README.md
+          test -f templates/README.md
           test -f framework/README.md
           test -f framework/workflow-state-model.md
           test -f framework/traceability.md
           test -f framework/version.md
+          test -f tasks/bootstrap-repo.md
+          test -f tasks/reconcile-repo.md
+          test -f tasks/validate-repo.md
           echo "Repository structure validation passed"

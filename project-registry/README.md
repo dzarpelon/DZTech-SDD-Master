@@ -1,4 +1,4 @@
-# Projects
+# Project Registry
 
 This directory stores project-level artifacts created from validated specifications.
 

@@ -19,15 +19,17 @@ This repository provides a single source of truth for:
 
 ## Repository Structure
 
-- `ideas/`: idea-stage artifacts managed before spec drafting
-- `specs/`: specification-stage artifacts
-- `projects/`: project records created from validated specs
+- `ideation/`: idea-stage artifacts managed before spec drafting
+- `master-spec/`: central specification artifacts for the master repository
+- `project-registry/`: project records created from validated specs
+- `templates/`: reusable repository templates and scaffolds
 - `framework/`: framework-level workflow, traceability, and version references
+- `tasks/`: file-driven operational tasks for bootstrap, reconcile, and validation
 - `.github/workflows/`: repository CI validation
 
 ## Governing Specifications
 
-- `dztech-sdd-master-spec-v1.md`
-- `dztech-sdd-master-operational-workflow-spec-v1.md`
+- `master-spec/dztech-sdd-master-spec-v1.md`
+- `master-spec/dztech-sdd-master-operational-workflow-spec-v1.md`
 - `AGENTS.md`
 - `CODEX_TASK.md`
