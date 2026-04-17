@@ -5,11 +5,31 @@ on:
   pull_request:
 
 jobs:
-  placeholder-validation:
+  validate-repository:
+    name: Validate Repository
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Placeholder validation
-        run: echo "Placeholder validation job"
+      - name: Repository structure validation
+        run: |
+          set -eu
+          test -f README.md
+          test -f AGENTS.md
+          test -f CODEX_TASK.md
+          test -f dztech-sdd-master-spec-v1.md
+          test -f dztech-sdd-master-operational-workflow-spec-v1.md
+          test -d ideas
+          test -d specs
+          test -d projects
+          test -d framework
+          test -d .github/workflows
+          test -f ideas/README.md
+          test -f specs/README.md
+          test -f projects/README.md
+          test -f framework/README.md
+          test -f framework/workflow-state-model.md
+          test -f framework/traceability.md
+          test -f framework/version.md
+          echo "Repository structure validation passed"

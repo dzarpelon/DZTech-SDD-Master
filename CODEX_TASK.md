@@ -2,12 +2,8 @@
 
 ## Objective
 
-Create the full repository "DZTech SDD Master" locally and on GitHub.
-
-Naming precision:
-- Human-readable project name: `DZTech SDD Master`
-- GitHub repository slug: `DZTech-SDD-Master`
-- GitHub repository visibility: `private`
+Create a FULLY FUNCTIONAL foundation for the repository "DZTech SDD Master"
+both locally and on GitHub.
 
 ---
 
@@ -25,29 +21,66 @@ You MUST read:
 
 You MUST:
 
-1. Create local repository folder:
-   DZTech-SDD-Master
-
+### Repository Setup
+1. Create local folder: DZTech-SDD-Master
 2. Initialize git repository
+3. Create GitHub repository: "DZTech SDD Master"
+4. Connect local repo to remote
+5. Push initial commit
 
-3. Create GitHub repository:
-   `DZTech-SDD-Master`
+---
 
-4. Add all spec files to repository
+### Repository Structure
 
-5. Create initial structure including:
-   - /ideas
-   - /specs
-   - /projects
-   - /framework
+Create structure:
 
-6. Create GitHub Actions baseline:
-   - basic CI workflow file
-   - placeholder validation job
+- /ideas
+- /specs
+- /projects
+- /framework
+- /.github/workflows
 
-7. Commit all files
+---
 
-8. Push to GitHub
+### Required Files
+
+Create:
+
+- README.md (describe purpose of repo)
+- AGENTS.md (already provided)
+- Spec files (already provided)
+
+---
+
+### GitHub Actions (MANDATORY)
+
+Create a working CI pipeline:
+
+File:
+.github/workflows/ci.yml
+
+Must include:
+
+- Trigger on push and PR
+- Basic job with:
+  - checkout repo
+  - echo validation step
+
+Example behavior:
+- Job name: "Validate Repository"
+- Step: "Repository structure validation placeholder"
+
+This MUST be a valid GitHub Actions file (not placeholder text).
+
+---
+
+### Validation
+
+Ensure:
+
+- Repo builds in GitHub Actions
+- Workflow executes successfully
+- Structure matches specs
 
 ---
 
@@ -55,10 +88,10 @@ You MUST:
 
 You MUST NOT:
 
+- Skip CI setup
+- Leave workflows as empty placeholders
+- Create advanced automation beyond CI
 - Add features not defined
-- Implement full automation pipelines
-- Skip workflow stages
-- Continue after completion
 
 ---
 
@@ -67,15 +100,17 @@ You MUST NOT:
 Repository is valid when:
 
 - Exists locally and on GitHub
-- Contains defined structure
-- Contains spec files
-- Has initial commit
-- Has GitHub Actions baseline
+- Has structure + real files (not only .gitkeep)
+- Has working GitHub Actions pipeline
+- CI runs successfully
 
 ---
 
 ## Final Step
 
-STOP execution after repository is created and pushed.
+STOP execution after:
 
-Await Human Operator validation.
+- Repo is pushed
+- CI is configured and valid
+
+Wait for Human Operator validation.

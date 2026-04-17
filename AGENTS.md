@@ -86,3 +86,7 @@ Stop when:
 - GitHub repo created
 - Initial push completed
 - Actions baseline exists
+
+
+If a required system component is mentioned but not explicitly implemented,
+you MUST create a minimal functional implementation instead of a placeholder.
