@@ -2,6 +2,10 @@
 
 This directory stores project-level artifacts created from validated specifications.
 
+Operational file:
+
+- `project-record-template.md`
+
 Relevant workflow states:
 
 - `project_created`

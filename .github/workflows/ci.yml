@@ -30,9 +30,18 @@ jobs:
           test -f ideation/README.md
           test -f master-spec/README.md
           test -f project-registry/README.md
+          test -f project-registry/project-record-template.md
           test -f templates/README.md
+          test -f templates/spec-template.md
+          test -f templates/project-record-template.md
           test -f framework/README.md
+          test -f framework/manifest.md
+          test -f framework/principles.md
+          test -f framework/ideation-to-spec-method.md
+          test -f framework/spec-canon.md
           test -f framework/workflow-state-model.md
+          test -f framework/validation-gates.md
+          test -f framework/agent-execution-rules.md
           test -f framework/traceability.md
           test -f framework/version.md
           test -f tasks/bootstrap-repo.md

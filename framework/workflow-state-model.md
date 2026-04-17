@@ -25,11 +25,6 @@
 - `pr_review` -> `product_validation` by Human Operator
 - `product_validation` -> `released` by Human Operator
 
-## Validation Gates
-
-- Gate 1: Idea Approval by Human Operator
-- Gate 2: Spec Approval by Human Operator
-- Gate 3: Critical PR Review by Human Operator when applicable
-- Gate 4: Product Validation by Human Operator
+## Rule
 
 No state skipping is allowed.
